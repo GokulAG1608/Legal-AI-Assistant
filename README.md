@@ -15,13 +15,29 @@ This project is an intelligent legal question-answering system built with **Stre
 
 ---
 
+## 🧠 How It Works
+Scrapes text from a legal URL (e.g., Indian Kanoon).
+
+Wraps the content into langchain.Document.
+
+Splits the text into chunks using CharacterTextSplitter.
+
+Generates embeddings via HuggingFace (all-MiniLM-L6-v2).
+
+Stores them in a FAISS vector store.
+
+Searches for relevant chunks based on user query.
+
+Passes context + question to the Mistral LLM to get an answer.
+
+
 ## 📦 Installation
 
 Make sure Python 3.8+ is installed.
 
 ```bash
 # 1. Clone the repository
-git clone https://github.com/your-username/legal-ai-assistant.git
+git clone https://github.com/GokulAG1608/Legal-AI-Assistant.git
 cd legal-ai-assistant
 
 # 2. Create a virtual environment (optional but recommended)
@@ -30,3 +46,7 @@ source venv/bin/activate  # On Windows: venv\Scripts\activate
 
 # 3. Install dependencies
 pip install -r requirements.txt
+
+
+
+
