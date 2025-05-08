@@ -1,0 +1,7 @@
+streamlit
+langchain
+mistralai
+faiss-cpu
+sentence-transformers
+requests
+beautifulsoup4
