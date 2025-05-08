@@ -10,7 +10,7 @@ from bs4 import BeautifulSoup
 # ---------- Configuration ----------
 st.set_page_config(page_title="Legal AI Assistant", layout="wide", page_icon="⚖️")
 
-api_key = "lww1VhdApvjYGlQFlRlTrzNjrUZf3eno"  # Use environment variable in production
+api_key = "Your-mistral-api-key"  # Use environment variable in production
 mistral_model = "open-mistral-7b"  # or use "pixtral-12b-2409"
 
 # ---------- Utility Functions ----------
